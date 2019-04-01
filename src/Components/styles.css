@@ -1,0 +1,235 @@
+@import url('http://fonts.googleapis.com/css?family=Lobster+Two');
+
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.body {
+  background-image: url('./assets/oki.png');
+}
+
+.slider {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+  width: 50%;
+  height: 80%;
+  color: #333;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url('./assets/TransparentWarmOki.png');
+  background-size: contain;
+  float: left;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.sliderAbout {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+  width: 50%;
+  height: 80%;
+  color: #333;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url('./assets/TransparentWarmOki.png');
+  background-size: contain;
+  float: left;
+}
+
+.textBox {
+  position: absolute;
+  top: 30%;
+  right: 5.5%;
+  width: 40%;
+  height: 10%;
+  font-size: 30;
+  color: #FFFFFF;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+.textBox2 {
+  position: absolute;
+  top: 27%;
+  right: 4%;
+  width: 40%;
+  height: 10%;
+  font-size: 30;
+  color: #FFFFFF;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+.textBox3 {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  width: 40%;
+  height: 10%;
+  font-size: 30;
+  color: #FFFFFF;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.description {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  right: 3.5%;
+  top: 150%;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.headerDivider {
+  background-color: #F5B041;
+  position: absolute;
+  top: 11%;
+  width: 100%;
+  height: 0%;
+}
+
+.header {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.iconDiv {
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  left: 2.5%;
+  top: 30%;
+}
+.iconButton {
+  background-image: url('./assets/oki.png');
+  height: 100%;
+  width: 85%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  outline: none;
+}
+
+.requestButtonDiv{
+  top: 72.5%;
+  position:absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 10%;
+  right: 20%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+.requestButton{
+    /*buttonItSelf - orange - #F5B041*/
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #FF931E;
+    outline: none;
+    position: relative;
+    /*text*/
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+    /*paddings*/
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+    /*transition for hover*/
+    -webkit-transition-duration: 0.5s; /* Safari transition*/
+    transition-duration: 0.5s; /*other*/
+
+}
+
+.requestButton:hover {
+    /*buttonItSelf - orange - #F5B041*/
+    background-color: #FFFFFF;
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+
+    /*text*/
+    font-size: 20px;
+    text-align: center;
+    color: #F5B041;
+
+    /*paddings*/
+
+}
+
+.aboutButton {
+  position:absolute;
+  right: 10%;
+  top: 55%;
+}
+
+.contactButton {
+  position:absolute;
+  right: 2.5%;
+  top: 55%;
+}
+
+.a2 {
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  position: absolute;
+  right: 15%;
+  top: 55%;
+}
+
+.a2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #FFFFFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.a2:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
