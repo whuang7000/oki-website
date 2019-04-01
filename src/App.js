@@ -8,7 +8,7 @@ import "./index.css"
 class App extends Component {
   render() {
     return (
-      <HomePage/>
+      <Route exact path={'/'} render={ (routerProps) => < HomePage routerProps={routerProps}/>}/>
     )
   }
 }
