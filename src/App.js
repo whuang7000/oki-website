@@ -8,7 +8,7 @@ import "./index.css"
 class App extends Component {
   render() {
     return (
-      <Route exact path = '/' component = {HomePage}/>
+      <HomePage/>
     )
   }
 }
