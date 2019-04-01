@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-react-app": "^7.0.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.4",
+    "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.4",
     "react-router": "^4.4.0",
     "react-router-dom": "^4.4.0",
