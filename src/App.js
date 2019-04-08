@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import { browserHistory } from 'react-router';
+import { BrowserRouter, Router, Route, Link} from 'react-router-dom';
+//import { BrowserRouter } from 'react-router';
 import HomePage from './Components/HomePage';
 import AboutText from './Components/AboutText';
 import "./index.css"
@@ -8,7 +8,9 @@ import "./index.css"
 class App extends Component {
   render() {
     return (
-      <Route exact path={'/'} render={ (routerProps) => < HomePage routerProps={routerProps}/>}/>
+      <BrowserRouter>
+        <Route exact path="/" component={HomePage}/>
+      </BrowserRouter>
     )
   }
 }
